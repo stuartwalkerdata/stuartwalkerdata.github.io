@@ -1,213 +1,295 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Stuart Walker Data Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <title>Stuart Walker Data Portfolio</title>
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="fade-in">
+  <style>
+    /* two‑column grid for all projects */
+    #projectGrid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+    }
+    @media (max-width: 900px) {
+      #projectGrid { grid-template-columns: 1fr; }
+    }
 
-				<!-- Intro -->
-					<div id="intro">
-						<h1>Stuart Walker <br>Data Portfolio<br /></h1>
-						<p>I am a Data driven Fraud Prevention Analyst skilled in SQL, Python, Tableau and Excel, please feel free to reach out and connect via <a href="https://www.linkedin.com/in/stuartwalker10/">LinkedIn</a></p>
-						<ul class="actions">
-							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-						</ul>
-					</div>
+    /* card styles */
+    #projectGrid article {
+      display: flex;
+      flex-direction: column;
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo">Stuart Walker Data Portfolio</a>
-					</header>
+    /* fixed‑height image container */
+    #projectGrid article .image {
+      flex: 0 0 200px;
+      overflow: hidden;
+    }
+    #projectGrid article .image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">Data Projects</a></li>
-							<!-- <li><a href="generic.html">Generic Page</a></li> -->
-							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<!-- <li><a href="https://twitter.com/sw_data" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
-							<li><a href="https://www.linkedin.com/in/stuartwalker10/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-						</ul>
-					</nav>
+    /* content area grows to fill */
+    #projectGrid article .content {
+      flex: 1 1 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+    }
+    #projectGrid article .content header,
+    #projectGrid article .content p,
+    #projectGrid article .content .actions {
+      margin: 0 0 0.5rem;
+    }
+    #projectGrid article .content header h2 {
+      font-size: 1.25rem;
+      margin: 0;
+    }
+    #projectGrid article .content p {
+      flex: 1 1 auto;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    #projectGrid article .content .actions {
+      text-align: right;
+    }
+  </style>
+</head>
+<body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
+  <div id="wrapper" class="fade-in">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://www.linkedin.com/pulse/python-engineeringiron-ore-processing-data-analysis-stuart-walker%3FtrackingId=8TXtWnzaQ%252BqQJmu%252BFkl7vQ%253D%253D/?trackingId=8TXtWnzaQ%2BqQJmu%2BFkl7vQ%3D%3D" target="_blank">Python Engineering/Iron Ore Processing Data Analysis<br />
-									</a></h2>
-									<p>This is a project I assembled, utilising a dataset from the complex realm of engineering and iron ore processing. I have conducted a comprehensive data analysis exclusively using the power of the Python programming language.</p>
-								</header>
-								<a href="https://www.linkedin.com/pulse/python-engineeringiron-ore-processing-data-analysis-stuart-walker%3FtrackingId=8TXtWnzaQ%252BqQJmu%252BFkl7vQ%253D%253D/?trackingId=8TXtWnzaQ%2BqQJmu%2BFkl7vQ%3D%3D" class="image main" target="_blank"><img src="images/Iron Ore Processing.gif" alt="" /></a>
-								<ul class="actions special">
-									<li><a href="https://www.linkedin.com/pulse/python-engineeringiron-ore-processing-data-analysis-stuart-walker%3FtrackingId=8TXtWnzaQ%252BqQJmu%252BFkl7vQ%253D%253D/?trackingId=8TXtWnzaQ%2BqQJmu%2BFkl7vQ%3D%3D" class="button large" target="_blank">View Project</a></li>
-								</ul>
-							</article>
+    <!-- Intro -->
+    <div id="intro">
+      <h1>Stuart Walker<br>Data Portfolio</h1>
+      <p>I am a data‑driven Fraud Prevention Analyst skilled in Machine Learning, Data Analysis, SQL, Python, Microsoft Azure (Databricks), Tableau, Power BI and Excel. Feel free to connect via <a href="https://www.linkedin.com/in/stuartwalker10/">LinkedIn</a>.</p>
+      <ul class="actions">
+        <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+      </ul>
+    </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://www.linkedin.com/pulse/doordash-data-analysis-stuart-walker/?published=t&trackingId=c%2B1e6oG5Sw2K9%2BIJ883GJA%3D%3D" target="_blank">DoorDash Excel Data Analysis<br />
-										</a></h2>
-									</header>
-									<a href="https://www.linkedin.com/pulse/doordash-data-analysis-stuart-walker/?published=t&trackingId=c%2B1e6oG5Sw2K9%2BIJ883GJA%3D%3D" class="image fit" target="_blank"><img src="images/DoorDash Data Analysis.gif" alt="" /></a>
-									<p>This is a project I put together using a dataset from the DoorDash food delivery company using nothing but Excel.</p>
-									<ul class="actions special">
-										<li><a href="https://www.linkedin.com/pulse/doordash-data-analysis-stuart-walker/?published=t&trackingId=c%2B1e6oG5Sw2K9%2BIJ883GJA%3D%3D" class="button" target="_blank">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://www.linkedin.com/pulse/massachusetts-school-data-analysis-stuart-walker/" target="_blank">Massachusetts School Tableau Data Analysis<br />
-										</a></h2>
-									</header>
-									<a href="https://www.linkedin.com/pulse/massachusetts-school-data-analysis-stuart-walker/" class="image fit" target="_blank"><img src="images/Graduation.gif" alt="" /></a>
-									<p>This project was created using Tableau exclusively using a dataset from the Massachesetts School Board.</p>
-									<ul class="actions special">
-										<li><a href="https://www.linkedin.com/pulse/massachusetts-school-data-analysis-stuart-walker/" class="button" target="_blank">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://www.linkedin.com/pulse/world-bank-sql-data-analysis-stuart-walker" target="_blank">World Bank SQL Data Analysis<br />
-										</a></h2>
-									</header>
-									<a href="https://www.linkedin.com/pulse/world-bank-sql-data-analysis-stuart-walker" class="image fit" target="_blank"><img src="images/World Bank SQL Data Analysis.gif" alt="" /></a>
-									<p>This project was put together using a dataset from the World Bank which I analysed using SQL.</p>
-									<ul class="actions special">
-										<li><a href="https://www.linkedin.com/pulse/world-bank-sql-data-analysis-stuart-walker" class="button" target="_blank">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://www.linkedin.com/pulse/healthcare-sql-data-analysis-stuart-walker" target="_blank">Healthcare SQL Data Anlysis<br />
-										</a></h2>
-									</header>
-									<a href="https://www.linkedin.com/pulse/healthcare-sql-data-analysis-stuart-walker" class="image fit" target="_blank"><img src="images/HospitalGIF.gif" alt="" /></a>
-									<p>This is a project I wrote using real hospital data and analysed using more complex SQL syntax/queries.</p>
-									<ul class="actions special">
-										<li><a href="https://www.linkedin.com/pulse/healthcare-sql-data-analysis-stuart-walker" class="button" target="_blank">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://www.linkedin.com/pulse/nba-20212022-player-stats-data-analysis-stuart-walker/" target="_blank">NBA 2021/2022 Player Stats Power BI Data Analysis<br />
-										</a></h2>
-									</header>
-									<a href="https://www.linkedin.com/pulse/nba-20212022-player-stats-data-analysis-stuart-walker/" class="image fit" target="_blank"><img src="images/jordan.gif" alt="" /></a>
-									<p>In this project I analyse the player stats from the NBA 2021/2022 season using Power BI.</p>
-									<ul class="actions special">
-										<li><a href="https://www.linkedin.com/pulse/nba-20212022-player-stats-data-analysis-stuart-walker/" class="button" target="_blank">View Project</a></li>
-									</ul>
-								</article>
-							</ul>
-						</article>
-						<article>
-							<header>
-								<h2><a href="https://www.linkedin.com/pulse/r-hr-attrition-data-analysis-stuart-walker" target="_blank">R HR Data Analysis<br />
-								</a></h2>
-							</header>
-							<a href="https://www.linkedin.com/pulse/r-hr-attrition-data-analysis-stuart-walker" class="image fit" target="_blank"><img src="images/HR Attrition Project.gif" alt="" /></a>
-							<p>In this project I analyse HR Attrition data using the R Programming language.</p>
-							<ul class="actions special">
-								<li><a href="https://www.linkedin.com/pulse/r-hr-attrition-data-analysis-stuart-walker" class="button" target="_blank">View Project</a></li>
-							</ul>
-						</article>
-								<!--article>
-									<header>
-										<h2><a href="#">Project 7<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>comment</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<!--article>
-									<header>
-										<h2><a href="#">Project 7<br />
-										</a></h2>
-									</header>
-									<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-									<p>comment</p>
-									<ul class="actions special">
-										<li><a href="#" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section> -->
-							</section>
+    <!-- Header -->
+    <header id="header">
+      <a href="index.html" class="logo">Stuart Walker Data Portfolio</a>
+    </header>
 
-						<!-- Footer>
-							<footer>
-								<div class="pagination">
-									<a href="#" class="previous">Prev</a>
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="page">3</a>
-									<span class="extra">&hellip;</span>
-									<a href="#" class="page">8</a>
-									<a href="#" class="page">9</a>
-									<a href="#" class="page">10</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer -->
-					</div>
+    <!-- Nav -->
+    <nav id="nav">
+      <ul class="links">
+        <li class="active"><a href="index.html">Data Projects</a></li>
+        <li><a href="certifications.html">Certifications</a></li>
+      </ul>
+      <ul class="icons">
+        <li><a href="https://www.linkedin.com/in/stuartwalker10/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+      </ul>
+    </nav>
 
-				<!-- footer -->	
-					<footer id="footer">
-						
-						<section class="split contact">
-							<section class="alt">
-								<h3>Address</h3>
-								<p><a href="https://www.google.com/maps/place/Rosyth/@56.0343635,-3.4650801,13z/data=!3m1!4b1!4m5!3m4!1s0x4887ce2016004a9f:0xf85d88e855ff9e82!8m2!3d56.03647!4d-3.423064" target="_blank">Rosyth, Fife<br />
-								Scotland</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="mailto:stuartwalkerdata@hotmail.com">stuartwalkerdata@hotmail.com</a></p>
-							</section>
-							<section>
-								<h3>Social</h3>
-								<ul class="icons alt">
-								<li><a href="https://www.linkedin.com/in/stuartwalker10/" class="icon brands alt fa-linkedin" target="_blank"><span class=""></span></a></li>
-								</ul>
-							</section>
-					</footer>
+    <!-- Main -->
+    <div id="main">
+      <section id="projectGrid">
 
-				<!-- Copyright -->
-					<div id="copyright">
-						<ul><li>&copy; StuartWalkerData</li><li>Design: HTML5 UP</a></li></ul>
-					</div>
+        <!-- Fraud Detection project -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/fraud-detection-using-xgboost-machine-learning-approach-stuart-walker-apeie/?trackingId=s0H2Mje4RLK7LJfKgobsxQ%3D%3D"
+             class="image main" target="_blank">
+            <img src="images/MLFraudGIF2.gif" alt="XGBoost‑powered fraud‑detection workflow" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/fraud-detection-using-xgboost-machine-learning-approach-stuart-walker-apeie/?trackingId=s0H2Mje4RLK7LJfKgobsxQ%3D%3D" target="_blank">
+                Fraud Detection using XGBoost: A Machine‑Learning Approach
+              </a></h2>
+            </header>
+            <p>In this project I built and deployed a production‑ready fraud‑detection model with XGBoost. Starting from a highly imbalanced card‑payments dataset, I engineered risk‑signal features, used stratified cross‑validation and Bayesian hyper‑parameter tuning, then calibrated the decision threshold against the business cost–benefit curve. The final model achieves high recall while keeping false positives below tolerance, and SHAP explainability is surfaced so analysts can understand why each transaction was flagged.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/fraud-detection-using-xgboost-machine-learning-approach-stuart-walker-apeie/?trackingId=s0H2Mje4RLK7LJfKgobsxQ%3D%3D" class="button large" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
 
-			</div>
+        <!-- Python / Iron‑Ore project -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/python-engineeringiron-ore-processing-data-analysis-stuart-walker/?trackingId=8TXtWnzaQ%2BqQJmu%2BFkl7vQ%3D%3D"
+             class="image main" target="_blank">
+            <img src="images/Iron Ore Processing.gif" alt="Iron‑ore processing analysis workflow" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/python-engineeringiron-ore-processing-data-analysis-stuart-walker/?trackingId=8TXtWnzaQ%2BqQJmu%2BFkl7vQ%3D%3D" target="_blank">
+                Python Engineering / Iron‑Ore Processing Data Analysis
+              </a></h2>
+            </header>
+            <p>This project explores a complex engineering dataset from iron‑ore processing, delivering a full workflow of Python‑based data ingestion, cleaning and statistical exploration.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/python-engineeringiron-ore-processing-data-analysis-stuart-walker/?trackingId=8TXtWnzaQ%2BqQJmu%2BFkl7vQ%3D%3D" class="button large" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
 
+        <!-- DoorDash Excel -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/doordash-data-analysis-stuart-walker/?published=t&trackingId=c%2B1e6oG5Sw2K9%2BIJ883GJA%3D%3D"
+             class="image fit" target="_blank">
+            <img src="images/DoorDash Data Analysis.gif" alt="DoorDash data in Excel" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/doordash-data-analysis-stuart-walker/?published=t&trackingId=c%2B1e6oG5Sw2K9%2BIJ883GJA%3D%3D" target="_blank">
+                DoorDash Excel Data Analysis
+              </a></h2>
+            </header>
+            <p>An Excel‑only analysis of DoorDash order‑pattern data.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/doordash-data-analysis-stuart-walker/?published=t&trackingId=c%2B1e6oG5Sw2K9%2BIJ883GJA%3D%3D" class="button" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <!-- Massachusetts Tableau -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/massachusetts-school-data-analysis-stuart-walker/"
+             class="image fit" target="_blank">
+            <img src="images/Graduation.gif" alt="Tableau visualisation of school data" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/massachusetts-school-data-analysis-stuart-walker/" target="_blank">
+                Massachusetts School Tableau Data Analysis
+              </a></h2>
+            </header>
+            <p>A Tableau‑driven deep‑dive into Massachusetts school‑board metrics.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/massachusetts-school-data-analysis-stuart-walker/" class="button" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
 
-	</body>
+        <!-- World Bank SQL -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/world-bank-sql-data-analysis-stuart-walker"
+             class="image fit" target="_blank">
+            <img src="images/World Bank SQL Data Analysis.gif" alt="SQL queries on World Bank data" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/world-bank-sql-data-analysis-stuart-walker" target="_blank">
+                World Bank SQL Data Analysis
+              </a></h2>
+            </header>
+            <p>Leveraging SQL to uncover insights from global World Bank indicators.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/world-bank-sql-data-analysis-stuart-walker" class="button" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Healthcare SQL -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/healthcare-sql-data-analysis-stuart-walker"
+             class="image fit" target="_blank">
+            <img src="images/HospitalGIF.gif" alt="Hospital data in SQL" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/healthcare-sql-data-analysis-stuart-walker" target="_blank">
+                Healthcare SQL Data Analysis
+              </a></h2>
+            </header>
+            <p>An advanced SQL project analysing real hospital data.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/healthcare-sql-data-analysis-stuart-walker" class="button" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- NBA Power BI -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/nba-20212022-player-stats-data-analysis-stuart-walker/"
+             class="image fit" target="_blank">
+            <img src="images/jordan.gif" alt="NBA 2021/22 player stats" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/nba-20212022-player-stats-data-analysis-stuart-walker/" target="_blank">
+                NBA 2021/22 Player Stats Power BI Analysis
+              </a></h2>
+            </header>
+            <p>Power BI dashboards exploring player performance in the 2021/22 NBA season.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/nba-20212022-player-stats-data-analysis-stuart-walker/" class="button" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- R HR Attrition -->
+        <article>
+          <a href="https://www.linkedin.com/pulse/r-hr-attrition-data-analysis-stuart-walker"
+             class="image fit" target="_blank">
+            <img src="images/HR Attrition Project.gif" alt="R analysis of HR attrition" />
+          </a>
+          <div class="content">
+            <header>
+              <h2><a href="https://www.linkedin.com/pulse/r-hr-attrition-data-analysis-stuart-walker" target="_blank">
+                R HR Attrition Data Analysis
+              </a></h2>
+            </header>
+            <p>Investigating HR attrition trends using the R programming language.</p>
+            <ul class="actions special">
+              <li><a href="https://www.linkedin.com/pulse/r-hr-attrition-data-analysis-stuart-walker" class="button" target="_blank">View Project</a></li>
+            </ul>
+          </div>
+        </article>
+
+      </section><!-- /projectGrid -->
+    </div><!-- /main -->
+
+    <!-- Footer -->
+    <footer id="footer">
+      <section class="split contact">
+        <section class="alt">
+          <h3>Address</h3>
+          <p><a href="https://www.google.com/maps/place/Rosyth/" target="_blank">Rosyth, Fife<br/>Scotland</a></p>
+        </section>
+        <section>
+          <h3>Email</h3>
+          <p><a href="mailto:stuartwalkerdata@hotmail.com">stuartwalkerdata@hotmail.com</a></p>
+        </section>
+        <section>
+          <h3>Social</h3>
+          <ul class="icons alt">
+            <li><a href="https://www.linkedin.com/in/stuartwalker10/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+          </ul>
+        </section>
+      </section>
+    </footer>
+
+    <!-- Copyright -->
+    <div id="copyright">
+      <ul><li>&copy; StuartWalkerData</li><li>Design: HTML5 UP</li></ul>
+    </div>
+
+  </div><!-- /wrapper -->
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.scrollex.min.js"></script>
+  <script src="assets/js/jquery.scrolly.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
 </html>
