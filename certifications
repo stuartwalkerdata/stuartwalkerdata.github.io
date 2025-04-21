@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Certifications | Stuart Walker</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<style>
+		/* two‑column responsive grid */
+		#certGrid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 2rem;
+		}
+		@media (max-width: 900px) {
+			#certGrid {
+				grid-template-columns: 1fr;
+			}
+		}
+		#certGrid article {
+			margin: 0;
+		}
+		/* shared image styling */
+		#certGrid img {
+			width: 100%;
+			height: auto;
+			border: 1px solid #e5e5e5;
+			box-shadow: 0 0 6px rgba(0, 0, 0, .06);
+			object-fit: contain;
+		}
+	</style>
+</head>
+<body class="is-preload">
+
+<!-- Wrapper -->
+<div id="wrapper" class="fade-in">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="logo">Stuart Walker Data Portfolio</a>
+	</header>
+
+	<!-- Nav -->
+	<nav id="nav">
+		<ul class="links">
+			<li><a href="index.html">Data Projects</a></li>
+			<li class="active"><a href="certifications.html">Certifications</a></li>
+		</ul>
+		<ul class="icons">
+			<li>
+				<a href="https://www.linkedin.com/in/stuartwalker10/" class="icon brands alt fa-linkedin" target="_blank">
+					<span class="label">LinkedIn</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Main -->
+	<div id="main">
+
+		<header class="major">
+			<h1>Professional Certifications</h1>
+		</header>
+
+		<section id="certGrid">
+
+			<!-- Converted PDF thumbnails -->
+			<article><img src="images/cert_thumbs/DataAnalyticsAcceleratorCertificate_Stuart_Walker.png" alt=""></article>
+			<article><img src="images/cert_thumbs/ML_Certificate.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Excel_Macros_and_VBA_for_Beginners_2021.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Excel_PivotTables_for_Beginners_2018.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Machine_Learning_with_Python_Foundations.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Machine_Learning_with_ScikitLearn.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Power_BI_Essential_Training_2020.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Qlik_Sense_Essential_Training.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_SQL_Essential_Training_2019.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Tableau_10_for_Data_Scientists.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Tableau_10_Mastering_Calculations.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Certificate_Of_Completion_Tableau_Essential_Training_2020.png" alt=""></article>
+			<article><img src="images/cert_thumbs/CertificateOfCompletion_Python_for_Data_Science_Essential_Training_Part_1.png" alt=""></article>
+			<article><img src="images/cert_thumbs/CertificateOfCompletion_Python_for_Data_Science_Essential_Training_Part_2_.png" alt=""></article>
+			<article><img src="images/cert_thumbs/EPG194_Certificate_of_Completion.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Fundamentals_of_Databricks_SQL.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Fundamentals_of_Delta_Lake.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Fundamentals_of_Machine_Learning.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Fundamentals_of_the_Databricks_Lakehouse_Platform.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Fundamentals_of_the_Databricks_Lakehouse_Platform_Accreditation.png" alt=""></article>
+			<article><img src="images/cert_thumbs/What_is_Databricks_Machine_Learning.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Python_Mimo.png" alt=""></article>
+			<article><img src="images/cert_thumbs/SQL_Mimo.png" alt=""></article>
+			<article><img src="images/cert_thumbs/Web_Development_Mimo.png" alt=""></article>
+
+		</section>
+
+	</div><!-- /main -->
+
+	<!-- Footer -->
+	<footer id="footer">
+		<section class="split contact">
+			<section class="alt">
+				<h3>Address</h3>
+				<p><a href="https://www.google.com/maps/place/Rosyth/" target="_blank">Rosyth, Fife<br/>Scotland</a></p>
+			</section>
+			<section>
+				<h3>Email</h3>
+				<p><a href="mailto:stuartwalkerdata@hotmail.com">stuartwalkerdata@hotmail.com</a></p>
+			</section>
+			<section>
+				<h3>Social</h3>
+				<ul class="icons alt">
+					<li><a href="https://www.linkedin.com/in/stuartwalker10/" class="icon brands alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				</ul>
+			</section>
+		</section>
+	</footer>
+
+	<!-- Copyright -->
+	<div id="copyright">
+		<ul><li>&copy; StuartWalkerData</li><li>Design: HTML5 UP</li></ul>
+	</div>
+
+</div><!-- /wrapper -->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
